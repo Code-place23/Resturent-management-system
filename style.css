@@ -1,0 +1,215 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+  height: auto;
+  width: auto;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+header{
+    position: fixed;
+    padding: 1.1%;
+    height: 70px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.527);
+    backdrop-filter: blur(50px);
+    display: flex;
+    justify-content: space-between;
+}
+header .name{
+    cursor: none;
+    margin-top: -.5%;
+    font-size: 2.5em;
+    font-variant: inherit;
+    font-weight: 800;
+    background: url(image/thumb.gif);
+    background-size: cover;
+    color: transparent;
+    background-clip: text;  
+}
+header .sign{
+    margin-left: 2%;
+    padding-left: 2%;
+    height: 100%;
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sign a{
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.3em;
+    padding: 7px 10px;
+    margin: 1%;
+    border-radius: 10px;
+    height: 40px;
+    width: 80px;
+}
+.signin a:hover, .signin a:active{
+    background-color: black;
+    color: white;
+}
+/* body parts */
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: url('image/back.jpeg') ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .row{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid;
+    margin-top: 70px;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+}
+.row::-webkit-scrollbar{width: 0%; height: 0%;}
+.row img{
+    width: 100%;
+  display: none;
+}
+
+.row img.active {
+  display: block;
+} 
+.container .box{
+  height: 70%;
+  width: 30%;
+  margin-top: 60px;
+  position: absolute;
+  color: white;
+  font-size: 1.5em;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  text-align: center;
+  align-self: first baseline;
+  margin-left: 2%;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.box p{
+  font-size: 1em;
+  text-align: left;
+  margin-top: 4%;
+  margin-left: 3%;
+}
+footer {
+  position: inherit;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  clear: both;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links, .footer-social {
+  margin: 20px;
+}
+
+.footer-links ul, .footer-social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li, .footer-social li {
+  margin-bottom: 10px;
+}
+
+.footer-links a, .footer-social a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover, .footer-social a:hover {
+  color: #ccc;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-copyright p {
+  margin: 0;
+}
+
+ion-icon{
+  height: 30px;
+  width: 30px;
+  color: white;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-links, .footer-social {
+    margin: 10px;
+  }
+}
+ /* Signup Page css code */
+.container .signup-pg{
+  margin-top: 100px;
+  position:static;
+   height: 80%;
+   width: 360px;
+   background-color: rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(5px);
+   border: 2px solid black;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+.signup-pg h2{
+  font-size: 2.3em;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+.signup-pg .input{
+  margin-top: 6%;
+  height: 45px;
+  width: 94%;
+  background-color: transparent;
+  border-radius: 10px;
+}
+.input label{
+  font-size: 1.2em;
+  color: black;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.input input{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 13px;
+  font-size: 1.2em;
+}
